@@ -1,0 +1,15 @@
+{
+  "id": "BalatroJokers",
+  "name": "BalatroJokers",
+  "display_name": "BalatroJokers",
+  "author": ["v22"],
+  "description": "Adds balatro jokers lol",
+  "prefix": "bj",
+  "prefixcomment":"ABOVE PREFIX IS ADDED TO E.G. LOCALIZATION!",
+  "main_file": "BalatroJokers.lua",
+  "priority": 0,
+  "badge_colour": "1de619",
+  "badge_text_colour": "",
+  "version": "1.0.0",
+  "dependencies": ["Steamodded (>=1.0.0~BETA-0614a)"]
+}
