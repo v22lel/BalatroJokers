@@ -8,8 +8,8 @@ SMODS.Atlas({
 SMODS.Joker {
     key = "j69",
     pos = { x = 0, y = 0 },                              --pos in spritesheet 0,0 for single sprites or the first sprite in the spritesheet.
-    rarity = 2,                                          --rarity 1=common, 2=uncommen, 3=rare, 4=legendary
-    cost = 6.9,                                            --cost to buy the joker in shops.
+    rarity = 3,                                          --rarity 1=common, 2=uncommen, 3=rare, 4=legendary
+    cost = 9,                                            --cost to buy the joker in shops.
     blueprint_compat=true,                               --does joker work with blueprint.
     eternal_compat=true,                                 --can joker be eternal.
     unlocked = true,                                     --is joker unlocked by default.

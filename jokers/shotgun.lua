@@ -7,13 +7,13 @@ SMODS.Atlas({
 
 SMODS.Joker {
     key = "shotgun",
-    pos = { x = 0, y = 0 },                              --pos in spritesheet 0,0 for single sprites or the first sprite in the spritesheet.
-    rarity = 2,                                          --rarity 1=common, 2=uncommen, 3=rare, 4=legendary
-    cost = 6.9,                                            --cost to buy the joker in shops.
-    blueprint_compat=false,                               --does joker work with blueprint.
-    eternal_compat=true,                                 --can joker be eternal.
-    unlocked = true,                                     --is joker unlocked by default.
-    discovered = true,                                   --is joker discovered by default.
+    pos = { x = 0, y = 0 },
+    rarity = 2,
+    cost = 6.9,
+    blueprint_compat = false,
+    eternal_compat = true,
+    unlocked = true,
+    discovered = true,
     atlas = "shotgun",
 
     config = {
@@ -26,26 +26,23 @@ SMODS.Joker {
         return {
             vars = {
                 card.ability.extra.chips
-            },
-            key = self.key
+            }
         }
     end,
 
     calculate = function(self, c, context)
-        if context.individual and context.other_card and context.cardarea == G.play then
-            local card = context.other_card
+        if context.destroy_card and context.cardarea == G.play then
+            local card = context.destroy_card
 
             local chips = card:get_chip_bonus() or 0
 
             c.ability.extra.chips = (c.ability.extra.chips or 0) + chips
-            c.sell_cost = c.sell_cost - chips;
-
-            card:start_dissolve();
+            c.sell_cost = c.sell_cost - chips
 
             return {
-                extra = {focus = card, message = localize('k_upgrade_ex')},
-                card = c,
-                colour = G.C.CHIPS
+                extra = {focus = c, message = localize('k_upgrade_ex')},
+                colour = G.C.CHIPS,
+                remove = true
             }
         end
 

@@ -14,6 +14,14 @@ return {
                     "Then destroy the scored playing card.",
                     "{C:inactive}Currently: {C:chips}#1#{} chips"
                 }
+            },
+            j_bj_dollarface = {
+                name = { "Dollarface" },
+                text = {
+                    "Every scoring number card",
+                    "gives {C:money}+2{} dollars,",
+                    "but face cards give {C:money}-2{} dollars."
+                }
             }
         }
     }
