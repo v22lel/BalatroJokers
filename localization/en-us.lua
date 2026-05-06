@@ -22,6 +22,38 @@ return {
                     "gives {C:money}+2{} dollars,",
                     "but face cards give {C:money}-2{} dollars."
                 }
+            },
+            j_bj_mirror = {
+                name = { "Card Mirror" },
+                text = {
+                    "When played hand is a pair",
+                    "convert the right card into",
+                    "the left card."
+                }
+            },
+            j_bj_tarot_chain = {
+                name = { "Tarot Chain" },
+                text = {
+                    "{C:green}#1# in #2#{} chance to",
+                    "create a {C:tarot}tarot{} card, when",
+                    "a {C:tarot}tarot{} card is used."
+                }
+            },
+            j_bj_money_buys_jokers = {
+                name = { "Money buys...Jokers!" },
+                text = {
+                    "When blind is selected,",
+                    "destroy the rightmost joker",
+                    "and if its sell cost is at least {C:money}#1#${},",
+                    "revive it as {C:dark_edition}negative{}"
+                }
+            },
+            j_bj_pay2win = {
+                name = { "Pay 2 Win" },
+                text = {
+                    "{X:mult,C:white}x#1#{} mult, but costs",
+                    "{C:money}#2#${} per hand."
+                }
             }
         }
     }
