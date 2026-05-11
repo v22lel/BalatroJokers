@@ -54,6 +54,13 @@ return {
                     "{X:mult,C:white}x#1#{} mult, but costs",
                     "{C:money}#2#${} per hand."
                 }
+            },
+            j_bj_poor_life = {
+                name = { "Poor Life" },
+                text = {
+                    "Gives {X:mult,C:white}#1#{}, but only if",
+                    "{C:money}dollars{} are below 0."
+                }
             }
         }
     }
