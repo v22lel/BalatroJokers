@@ -54,6 +54,27 @@ return {
                     "{X:mult,C:white}x#1#{} mult, but costs",
                     "{C:money}#2#${} per hand."
                 }
+            },
+            j_bj_wardrobe = {
+                name = { "Wardrobe" },
+                text = {
+                    "Each unique scoring suit",
+                    "gives {C:chips}+#1#{} Chips."
+                }
+            },
+            j_bj_evencredit = {
+                name = { "Even Credit" },
+                text = {
+                    "{X:mult,C:white}x#1#{} mult when dollars are even,",
+                    "{X:mult,C:white}x#2#{} mult when dollars are odd"
+                }
+            },
+            j_bj_balancer = {
+                name = { "Balancer" },
+                text = {
+                    "If scored chips exceed mult,",
+                    "{C:purple}balance{} them."
+                }
             }
         }
     }
